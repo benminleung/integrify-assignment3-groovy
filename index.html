@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+
+
+
+	
+	<!--Navigation Bar-->
+	<div id="nav" class="style-box flex"> 
+		<img src="src/logo.png" id="nav-img">
+		<div id="nav-bar">
+			<div class="nav-bar-item">
+				<a>home</a>
+				<h4>back home</h4>
+			</div>
+			<div class="nav-bar-item">
+				<a>options panel</a>
+				<h4>control setting</h4>
+			</div>
+			<div class="nav-bar-item">
+				<a>about</a>
+				<h4>who we are</h4>
+			</div>
+			<div class="nav-bar-item">
+				<a>full width</a>
+				<h4>no sidebars</h4>
+			</div class="nav-bar-item">
+		</div>
+	</div>
+
+	<!--Page Body-->
+	<div id="page" class="flex">
+		
+		<!---Main Content-->
+		<div id="page-main">
+
+			<!--Article 1-->
+			<div class="style-box">
+				<img src="src/brookbridge-770x433.jpg">
+				<h1>
+					ole ela pikku nyt puhua saa istui
+				</h1>
+				<h4>
+					posted in facebook by mythemeshop on may april 4, 2018
+				</h4>
+				<p class="style-line">
+					Kulkuneuvo luulikohan vietavaksi jaa nuottikota pannaksesi jaa vai eli. Tein lie olin ajaa oli eika. On suku joka ne ihan yhta paha alas. He me te kitupiikki pilkkanaan ruostuneen lahetakaan en pysahtyvan. Loi semmoinen ikaankuin han ikkunasta.
+				</p>
+				<p class="page-main-readMore"><a>Read More</a></p>
+			</div>
+
+			<!--Article 2-->
+			<div class="style-box">
+				<img src="src/434434.jpeg">
+				<h1>
+					Et ja harrykoita vieraankin seuratessa enemmankin te ei oljyisella elamassani
+				</h1>
+				<h4>
+					posted in social media by mythemeshop on may april 4, 2018
+				</h4>
+				<p class="style-line">
+					Kulkuneuvo luulikohan vietavaksi jaa nuottikota pannaksesi jaa vai eli. Tein lie olin ajaa oli eika. On suku joka ne ihan yhta paha alas. He me te kitupiikki pilkkanaan ruostuneen lahetakaan en pysahtyvan. Loi semmoinen ikaankuin han ikkunasta.
+				</p>
+				<p class="page-main-readMore style-line"><a>Read More</a></p>
+			</div>
+
+			<!--Page Numbers-->
+			<div class="style-box">
+				<div id="page-main-pagination" class="flex">
+					<div class="active">1</div>
+					<div>2</div>
+					<div>3</div>
+				</div>
+			</div>
+		</div>
+
+		<!---Side Bar-->
+		<div id="page-side">
+			<div class="style-box">
+				<img src="src/300x250.png">
+			</div>
+			<div id="side-popular" class="style-box flex">
+				<div id="side-popular-top" class="flex">
+					<button class="active">Popular</button>
+					<button>Recent</button>
+				</div>
+				<div id="side-popular-botton">
+					<div>Unable to load tab content</div>
+				</div>
+			</div>
+			<div class="style-box">
+				<form action="/action_page.php">
+     				Search: <input type="text" name="search">
+    			</form>
+			</div>
+			<div class="style-box">
+				<h3>Our Sponsors</h3>
+				<div id="side-sponsors" class="flex">
+					<img class="side-sponsors-img" src="src/125x125.png">
+					<img class="side-sponsors-img" src="src/125x125.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!---Bottom bar-->
+	<div id="bottom" class="style-box">
+
+		<div class="flex">
+			<!---Left bottom bar-->
+			<div class="bottom-item">
+				<h2>lorem ipusm</h2>
+				<p class="style-line">
+					Me yhta alla koli ei se siis. He vielakaan ai arentinsa et tarvitaan me huumannut. He mies enaa asuu on mika edes et asia no.
+				</p>
+			</div>
+
+			<!---Center bottom bar-->
+			<div class="bottom-item">
+				<h2>recent posts</h2>
+				<ul id="bottom-recentPosts" class="style-line">
+					<li>Me yhta alla koli ei se siis. He vielakaan ai arentinsa et tarvitaan me huumannut. He mies enaa asuu on mika edes et asia no.</li>
+					<li>He vielakaan ai arentinsa et tarvitaan me huumannut.</li>
+					<li>He mies enaa asuu on mika edes et asia no.</li>
+				</ul>
+			</div>
+
+			<!---Right bottom bar-->
+			<div class="bottom-item">
+				<h2>tags (with JS)</h2>
+				<div id="bottom-tags" class="style-line flex"></div>
+			</div>
+		</div>
+
+		<div class="flex style-line">
+			<p>ABCDE Theme Demo Copyright &copy; 2018.</p>
+			<p>Theme by ABCDEF. <a href="#Top" style="color: inherit;">Back to Top</a></p>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		let tagsList = ['Facebook', 'featured', 'Social media', 'Tag 1', 'Tag 2', 'Tag 3', 'JavaScript', 'CSS'];
+
+		tagsList.forEach(function(item) {
+			document.getElementById("bottom-tags").innerHTML += `<div class="bottom-tags-tag">${item}</div>`;
+		});
+	</script>
+
+</body>
+</html>

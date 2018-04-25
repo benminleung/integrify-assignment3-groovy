@@ -27,7 +27,7 @@ h4 {
 	color: #b3b3b3;
 }
 
-p , li{
+p {
 	color: #8c8c8c;
 }
 
@@ -37,20 +37,18 @@ p , li{
 }
 
 #bottom-recentPosts {
-	list-style-type: none;
-	padding: inherit;
-	padding-right: 0;
-	padding-left: 1em;
-	text-indent: -.5em;
+	flex-direction: column;
 }
 
-#bottom-recentPosts li:before {
-	content: "\276F";
+.bottom-recentPosts-bullet {
+	width: 100%;
 }
 
-#bottom-recentPosts p {
-	border: none;
+.bottom-recentPosts-post {
+	flex-direction: row;
+	justify-content: flex-start;
 }
+
 
 #bottom-tags {
 	flex-wrap: wrap;
@@ -139,7 +137,7 @@ p , li{
 
 
 #page-side {
-	width:60%;
+	width:50%;
 	display: flex;
 	flex-direction: column;
 }

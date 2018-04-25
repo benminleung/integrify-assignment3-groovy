@@ -122,7 +122,9 @@
 			<!---Center bottom bar-->
 			<div class="bottom-item">
 				<h2>recent posts</h2>
-				<ul id="bottom-recentPosts" class="style-line">
+				<div id="bottom-recentPosts" class="flex style-line"></div>
+
+				<ul class="style-line">
 					<li>Me yhta alla koli ei se siis. He vielakaan ai arentinsa et tarvitaan me huumannut. He mies enaa asuu on mika edes et asia no.</li>
 					<li>He vielakaan ai arentinsa et tarvitaan me huumannut.</li>
 					<li>He mies enaa asuu on mika edes et asia no.</li>
@@ -136,6 +138,7 @@
 			</div>
 		</div>
 
+		<!--Copyrights bar-->
 		<div class="flex style-line">
 			<p>ABCDE Theme Demo Copyright &copy; 2018.</p>
 			<p>Theme by ABCDEF. <a href="#Top" style="color: inherit;">Back to Top</a></p>
@@ -143,10 +146,27 @@
 	</div>
 
 	<script type="text/javascript">
+
+		//Tags
 		let tagsList = ['Facebook', 'featured', 'Social media', 'Tag 1', 'Tag 2', 'Tag 3', 'JavaScript', 'CSS'];
 
 		tagsList.forEach(function(item) {
 			document.getElementById("bottom-tags").innerHTML += `<div class="bottom-tags-tag">${item}</div>`;
+		});
+
+		//Recent Posts
+		let recentPostsList = [
+			"Me yhta alla koli ei se siis. He vielakaan ai arentinsa et tarvitaan me huumannut. He mies enaa asuu on mika edes et asia no.",
+			"He vielakaan ai arentinsa et tarvitaan me huumannut.",
+			"He mies enaa asuu on mika edes et asia no."
+		]
+
+		recentPostsList.forEach(function(item) {
+			document.getElementById("bottom-recentPosts").innerHTML +=
+				`<div class="bottom-recentPosts-post flex">
+					<img class="bottom-recentPosts-bullet" src="src/arrowRight.png"/>
+					<div>${item}</div>
+				</div>`
 		});
 	</script>
 
